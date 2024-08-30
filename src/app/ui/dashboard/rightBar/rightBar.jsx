@@ -1,33 +1,63 @@
 'use client'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import {
-  MdSearch,
-  MdOutlineChat,
-  MdNotifications,
-  MdPublic,
-} from 'react-icons/md'
+import { MdPlayCircleFilled } from 'react-icons/md'
 
 export default function RightBar() {
   const pathname = usePathname()
 
   return (
-    <div className='flex place-content-between items-center p-5 m-5 rounded-lg bg-soft'>
-      <div className='font-bold text-gray capitalize'>
-        {pathname.split('/').pop()}
-      </div>
-      <div className='flex items-center font-bold'>
-        <div className='flex items-center p-2.5 gap-2.5 mr-4 bg-slate-700 rounded-lg'>
-          <MdSearch />
-          <input
-            className='flex items-center gap-2.5  text-gray bg-slate-700 rounded-lg'
-            type='text'
-            placeholder='Search...'
+    <div className='flex flex-grow  flex-col fixed mr-5'>
+      <div className='flex flex-col rounded-lg p-5 mb-5 ml-5 bg-gradient-to-t from-primary to-soft relative '>
+        <div className='absolute bottom-0 right-0 w-1/2 h-1/2'>
+          <Image
+            className='object-contain opacity-20'
+            src='/lindo.png'
+            alt='tomate'
+            width={100}
+            height={100}
           />
         </div>
-        <div className='flex gap-2.5'>
-          <MdOutlineChat size={20} />
-          <MdNotifications size={20} />
-          <MdPublic size={20} />
+        <div className='flex flex-col gap-2'>
+          <span className='font-bold'>Available Now</span>
+          <h3 className='font-medium text-xs '>
+            How to use the new version of the admin dashboard?
+          </h3>
+          <span className='text-xs text-gray'>Takes 4 minutes to learn</span>
+          <p className='text-xs text-gray'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit eius libero perspiciatis recusandae possimus.
+          </p>
+          <button className='flex items-center rounded-md bg-blue-600 cursor-pointer p-1 text-sm w-max h-fit'>
+            <MdPlayCircleFilled />
+            Watch
+          </button>
+        </div>
+      </div>
+      <div className='flex flex-col rounded-lg p-5 mb-5 ml-5 bg-gradient-to-t from-primary to-soft relative '>
+        <div className='absolute bottom-0 right-0 w-1/2 h-1/2'>
+          <Image
+            className='object-contain opacity-20'
+            src='/lindo.png'
+            alt='tomate'
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className='flex flex-col gap-2'>
+          <span className='font-bold'>Available Now</span>
+          <h3 className='font-medium text-xs '>
+            How to use the new version of the admin dashboard?
+          </h3>
+          <span className='text-xs text-gray'>Takes 4 minutes to learn</span>
+          <p className='text-xs text-gray'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit eius libero perspiciatis recusandae possimus.
+          </p>
+          <button className='flex items-center rounded-md bg-blue-600 cursor-pointer p-1 text-sm w-max h-fit'>
+            <MdPlayCircleFilled />
+            Watch
+          </button>
         </div>
       </div>
     </div>
