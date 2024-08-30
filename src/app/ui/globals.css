@@ -1,0 +1,15 @@
+/* global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary text-white;
+} 
+
+a {
+  @apply text-current no-underline;
+}
+
+
+
