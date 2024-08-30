@@ -105,7 +105,7 @@ export default function SideBar() {
           </li>
         ))}
       </ul>
-      <button className='flex items-center p-5 mb-1 gap-2.5 w-full hover:bg-slate-700 rounded-lg'>
+      <button className='flex items-center p-5 mb-1 gap-2.5 w-full hover:bg-grayHover rounded-lg'>
         <MdLogout />
         Logout
       </button>

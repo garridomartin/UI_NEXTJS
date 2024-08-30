@@ -12,7 +12,7 @@ export default function Card() {
   const pathname = usePathname()
 
   return (
-    <div className='flex bg-soft p-2.5 rounded-lg gap-5 cursor-pointer w-full hover:bg-slate-700'>
+    <div className='flex bg-soft p-2.5 rounded-lg gap-5 cursor-pointer w-full hover:bg-grayHover'>
       <MdSupervisedUserCircle size={24} />
       <div className='flex flex-col gap-5'>
         <span>Total Users</span>

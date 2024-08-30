@@ -8,8 +8,8 @@ export default function MenuLink({ item }) {
   return (
     <Link
       href={item.path}
-      className={`flex p-5 items-center mb-1 gap-2.5 hover:bg-slate-700 rounded-lg ${
-        pathname === item.path ? 'bg-slate-700' : ''
+      className={`flex p-5 items-center mb-1 gap-2.5 hover:bg-grayHover rounded-lg ${
+        pathname === item.path ? 'bg-grayHover' : ''
       }`}
     >
       {item.icon}

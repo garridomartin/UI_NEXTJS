@@ -1,5 +1,7 @@
 import Card from '../ui/dashboard/card/card'
+import Chart from '../ui/dashboard/chart/chart'
 import RightBar from '../ui/dashboard/rightBar/rightBar'
+import Transactions from '../ui/dashboard/transactions/transactions'
 
 export default function DashboarComponent() {
   return (
@@ -9,6 +11,12 @@ export default function DashboarComponent() {
           <Card />
           <Card />
           <Card />
+        </div>
+        <div>
+          <Transactions />
+        </div>
+        <div>
+          <Chart />
         </div>
       </div>
       <div className='flex-1'>

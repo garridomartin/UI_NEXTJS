@@ -3,13 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .bg-primary {
+    background-color: var(--tw-bg-opacity, 1) var(--tw-bg-primary);
+  }
+}
+
 body {
   @apply bg-primary text-white;
-} 
+}
 
 a {
   @apply text-current no-underline;
 }
-
-
-
